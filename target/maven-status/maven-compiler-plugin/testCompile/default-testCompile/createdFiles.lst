@@ -1,0 +1,5 @@
+com\maven\test\Helper\Basepage.class
+com\maven\test\testscripts\Testcase01.class
+com\maven\test\pages\LandingPage.class
+com\maven\test\testscripts\Testcase02.class
+com\maven\test\pages\Login.class
