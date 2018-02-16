@@ -6,17 +6,21 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
+
+
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 public class Basepage {
 
-public static WebDriver driver;
+		
+public static WebDriver driver = null;
 
 	@BeforeClass
 	public void startbrowser()
 	{
-		
+		if(driver==null)
+		{
 		String brwname = "CH";
 	//	String URL = "https://trinet.trianz.com";
 		
@@ -29,7 +33,7 @@ public static WebDriver driver;
 			System.setProperty("webdriver.chrome.driver","C:\\Personel\\Softwares\\chromedriver_win32\\chromedriver.exe");	
 			driver = new ChromeDriver();
 		}
-		
+		}
 		driver.get("https://trinet.trianz.com");
 	//	driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
