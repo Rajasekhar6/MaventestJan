@@ -11,42 +11,40 @@ import org.testng.annotations.Test;
 import com.maven.test.Helper.Basepage;
 import com.maven.test.pages.Login;
 
-public class Testcase01 extends Basepage{
+public class Testcase01 extends Basepage {
 
 	@Test
 	public void Logintest()
-//Adding the new line in Testcase01
-//Adding the new line in Testcase01
+
 	{
-	//	test = rep.startTest("Logintest");
-	//	test.log(LogStatus.INFO	, "loginwith userid and password");
+		// test = rep.startTest("Logintest");
+		// test.log(LogStatus.INFO , "loginwith userid and password");
 		try {
-		Login lg = PageFactory.initElements(Basepage.driver,Login.class);
-		lg.textboxusername().sendKeys("rajasekhar.kakumanu");
-		lg.textboxpassword().sendKeys("India2018*");
-		lg.buttonlogin().click();
-		}catch(Exception e)
-		{
+			Login lg = PageFactory.initElements(Basepage.driver, Login.class);
+			lg.textboxusername().sendKeys("rajasekhar.kakumanu");
+			lg.textboxpassword().sendKeys("Aws2018*");
+			lg.buttonlogin().click();
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
-	String text = Basepage.driver.getTitle();
-	System.out.println(text);
-	if(text.contains("Trinet - Homeeee"))
-	//	test.log(LogStatus.INFO, "validating the page title");
-	{
-	//	test.log(LogStatus.FAIL, "title not matched");
-	//	Assert.fail("Checking screen shot scenario");
-		System.out.println("Login is success");
-	}
-	//else {
-	System.out.println("Login is Fail");
-	//Assert.fail("Login is unsucessful");
+
+		String text = Basepage.driver.getTitle();
+		System.out.println(text);
+		if (text.contains("Trinet - Home"))
+		// test.log(LogStatus.INFO, "validating the page title");
+		{
+			// test.log(LogStatus.FAIL, "title not matched");
+			// Assert.fail("Checking screen shot scenario");
+			System.out.println("Login is success");
+		} else {
+			System.out.println("Login is Fail");
+		}
+		// Assert.fail("Login is unsucessful");
 	}
 
-		@AfterMethod
-		public void quit() {
-	//		rep.endTest(test);
-	// 	rep.flush();
-		}
+	@AfterMethod
+	public void quit() {
+		// rep.endTest(test);
+		// rep.flush();
 	}
+}

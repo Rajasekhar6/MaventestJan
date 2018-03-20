@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeTest;
 
 
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 
 public class Basepage {
@@ -23,7 +24,7 @@ public static WebDriver driver = null;
 		{
 		String brwname = "CH";
 	//	String URL = "https://trinet.trianz.com";
-		
+			
 		if(brwname.equalsIgnoreCase("FF"))
 		{
 			System.setProperty("webdriver.gecko.driver","C:\\Personel\\Softwares\\geckodriver-v0.18.0-win64\\geckodriver.exe");
@@ -32,9 +33,14 @@ public static WebDriver driver = null;
 		{
 			System.setProperty("webdriver.chrome.driver","C:\\Personel\\Softwares\\chromedriver_win32\\chromedriver.exe");	
 			driver = new ChromeDriver();
+		}else if(brwname.equalsIgnoreCase("IE"))
+		{
+			System.setProperty("webdriver.ie.driver","C:\\Personel\\Softwares\\IEDriverServer\\IEDriverServer.exe");	
+			driver = new InternetExplorerDriver();
 		}
 		}
 		driver.get("https://trinet.trianz.com");
+	//	driver.get("http://flipkart.com");
 	//	driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		

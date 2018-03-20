@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37752" started-at="2018-02-16T14:55:26Z" finished-at="2018-02-16T14:56:04Z">
+  <suite name="Default suite" duration-ms="18203" started-at="2018-03-20T13:46:49Z" finished-at="2018-03-20T13:47:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37752" started-at="2018-02-16T14:55:26Z" finished-at="2018-02-16T14:56:04Z">
+    <test name="Default test" duration-ms="18203" started-at="2018-03-20T13:46:49Z" finished-at="2018-03-20T13:47:07Z">
       <class name="com.maven.test.testscripts.Testcase01">
-        <test-method status="PASS" signature="startbrowser()[pri:0, instance:com.maven.test.testscripts.Testcase01@1d057a39]" name="startbrowser" is-config="true" duration-ms="13196" started-at="2018-02-16T20:25:26Z" finished-at="2018-02-16T20:25:40Z">
+        <test-method status="PASS" signature="startbrowser()[pri:0, instance:com.maven.test.testscripts.Testcase01@59f99ea]" name="startbrowser" is-config="true" duration-ms="11206" started-at="2018-03-20T19:16:49Z" finished-at="2018-03-20T19:17:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startbrowser -->
-        <test-method status="PASS" signature="Logintest()[pri:0, instance:com.maven.test.testscripts.Testcase01@1d057a39]" name="Logintest" duration-ms="24533" started-at="2018-02-16T20:25:40Z" finished-at="2018-02-16T20:26:04Z">
+        <test-method status="PASS" signature="Logintest()[pri:0, instance:com.maven.test.testscripts.Testcase01@59f99ea]" name="Logintest" duration-ms="6972" started-at="2018-03-20T19:17:00Z" finished-at="2018-03-20T19:17:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logintest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.maven.test.testscripts.Testcase01@1d057a39]" name="quit" is-config="true" duration-ms="0" started-at="2018-02-16T20:26:04Z" finished-at="2018-02-16T20:26:04Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.maven.test.testscripts.Testcase01@59f99ea]" name="quit" is-config="true" duration-ms="0" started-at="2018-03-20T19:17:07Z" finished-at="2018-03-20T19:17:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
