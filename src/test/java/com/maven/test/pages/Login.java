@@ -1,5 +1,4 @@
 package com.maven.test.pages;
-//updated in github
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
